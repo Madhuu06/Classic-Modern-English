@@ -1,0 +1,426 @@
+/* Classical Translation Result Styles */
+.translation-result {
+  max-width: 900px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, rgba(218, 165, 32, 0.1) 0%, rgba(139, 69, 19, 0.05) 100%);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(218, 165, 32, 0.2);
+}
+
+.result-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.result-header h2 {
+  font-size: 2.75rem;
+  background: linear-gradient(135deg, #daa520 0%, #ffd700 50%, #fff8dc 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  font-family: 'Georgia', serif;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.elegance-meter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.meter-label {
+  font-size: 1.125rem;
+  color: rgba(248, 248, 255, 0.8);
+  font-weight: 500;
+  font-family: 'Georgia', serif;
+}
+
+.meter-badge {
+  padding: 0.75rem 2rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+  font-family: 'Georgia', serif;
+}
+
+.meter-badge.magnificent { background: linear-gradient(135deg, #8b4513 0%, #daa520 50%, #ffd700 100%); }
+.meter-badge.splendid { background: linear-gradient(135deg, #a0522d 0%, #cd853f 50%, #daa520 100%); }
+.meter-badge.refined { background: linear-gradient(135deg, #8b7355 0%, #a0522d 50%, #cd853f 100%); }
+.meter-badge.polished { background: linear-gradient(135deg, #696969 0%, #8b7355 50%, #a0522d 100%); }
+.meter-badge.modest { background: linear-gradient(135deg, #708090 0%, #696969 50%, #8b7355 100%); }
+
+/* Classical Translation Steps */
+.translation-steps {
+  margin-bottom: 2rem;
+}
+
+.translation-steps h3 {
+  color: rgba(248, 248, 255, 0.9);
+  font-family: 'Georgia', serif;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Simple translations between original and final */
+.simple-translations {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.simple-translation {
+  background: rgba(218, 165, 32, 0.1);
+  border: 1px solid rgba(218, 165, 32, 0.2);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 0;
+}
+
+.simple-translation p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: rgba(248, 248, 255, 0.8);
+  margin: 0;
+  text-align: center;
+  font-style: italic;
+  font-family: 'Georgia', serif;
+}
+
+.language-label {
+  color: #daa520;
+  font-weight: 600;
+  font-style: normal;
+  font-family: 'Georgia', serif;
+}
+
+.original-input {
+  background: linear-gradient(135deg, #fdf6e3 0%, #fffef9 100%);
+  border: 2px solid #daa520;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(184, 134, 11, 0.3);
+  transition: all 0.3s ease;
+}
+
+.original-input:hover {
+  border-color: #b8860b;
+  box-shadow: 0 4px 8px rgba(218, 165, 32, 0.4);
+  transform: translateY(-2px);
+}
+
+.original-input h3 {
+  font-size: 1.25rem;
+  color: #8b4513;
+  text-align: center;
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.5;
+  font-family: 'Georgia', serif;
+}
+
+.translation-steps h3 {
+  font-size: 1.25rem;
+  color: #8b4513;
+  text-align: left;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  line-height: 1.5;
+  font-family: 'Georgia', serif;
+}
+
+.final-result {
+  background: linear-gradient(135deg, #fdf6e3 0%, #fffef9 100%);
+  border: 2px solid #daa520;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  box-shadow: 0 2px 4px rgba(184, 134, 11, 0.3);
+  transition: all 0.3s ease;
+}
+
+.final-result:hover {
+  border-color: #b8860b;
+  box-shadow: 0 4px 8px rgba(218, 165, 32, 0.4);
+  transform: translateY(-2px);
+}
+
+.final-result h3 {
+  font-size: 1.25rem;
+  color: #8b4513;
+  text-align: center;
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.5;
+  font-family: 'Georgia', serif;
+}
+
+.journey-steps {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.journey-step {
+  background: transparent;
+  border: none;
+  padding: 1rem 0;
+  border-radius: 0;
+  transition: none;
+  box-shadow: none;
+  position: relative;
+  border-bottom: none;
+}
+
+.journey-step:hover {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  transform: none;
+}
+
+.journey-step:last-child {
+  border-bottom: none;
+}
+
+.journey-step.start {
+  border-left: none;
+  background: transparent;
+}
+
+.journey-step.end {
+  border-left: none;
+  background: transparent;
+}
+
+.journey-step.middle {
+  border-left: none;
+}
+
+.step-header {
+  display: inline;
+  margin-bottom: 0;
+}
+
+.step-number {
+  background: transparent;
+  color: #daa520;
+  padding: 0;
+  border-radius: 0;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: none;
+  letter-spacing: normal;
+  display: inline;
+  margin-right: 0.5rem;
+  font-family: 'Georgia', serif;
+}
+
+.step-language {
+  color: #8b4513;
+  font-weight: 600;
+  font-size: 1rem;
+  display: none;
+  font-family: 'Georgia', serif;
+}
+
+.step-text {
+  display: block;
+  margin-top: 0.5rem;
+  margin-left: 0;
+}
+
+.step-text p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #8b4513;
+  font-style: normal;
+  margin: 0;
+  display: inline;
+  text-align: left;
+  font-family: 'Georgia', serif;
+}
+
+.copy-btn-small {
+  background: transparent;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: none;
+  margin-left: 1rem;
+  color: #b8860b;
+  opacity: 0.7;
+}
+
+.copy-btn-small:hover {
+  background: transparent;
+  color: #8b4513;
+  opacity: 1;
+}
+
+/* Remove step arrows - not needed in new format */
+
+/* Result Actions */
+.result-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.new-translation-btn {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.new-translation-btn {
+  background: linear-gradient(135deg, #b8860b 0%, #daa520 100%);
+  color: white;
+  box-shadow: 0 4px 6px -1px rgba(184, 134, 11, 0.3), 0 2px 4px -1px rgba(184, 134, 11, 0.2);
+  font-family: 'Georgia', serif;
+}
+
+.new-translation-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  background: linear-gradient(135deg, #fdf6e3 0%, #fffef9 100%);
+  border-radius: 15px;
+  padding: 1rem;
+  border: 1px solid rgba(218, 165, 32, 0.3);
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.9rem;
+  color: #8b4513;
+  margin-bottom: 0.2rem;
+  font-family: 'Georgia', serif;
+}
+
+.stat-value {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #b8860b;
+  font-family: 'Georgia', serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .journey-step {
+    padding: 0.75rem 0;
+  }
+  
+  .step-header {
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+  
+  .step-text {
+    margin-top: 0.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .step-text p {
+    flex: 1;
+    margin-right: 0.5rem;
+  }
+  
+  .copy-btn-small {
+    margin-left: 0;
+    flex-shrink: 0;
+  }
+  
+  .result-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .new-translation-btn {
+    width: 250px;
+  }
+  
+  .stats {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .result-header h2 {
+    font-size: 2rem;
+  }
+  
+  .original-input {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .original-input h3 {
+    font-size: 1.125rem;
+  }
+  
+  .journey-step {
+    padding: 0.5rem 0;
+    margin: 0;
+  }
+  
+  .step-text p {
+    font-size: 1rem;
+  }
+  
+  .translation-steps h3,
+  .final-result h3 {
+    font-size: 1.125rem;
+  }
+  
+  .final-result {
+    padding: 1rem;
+  }
+  
+  .new-translation-btn {
+    width: 200px;
+    padding: 0.8rem 1.5rem;
+  }
+}

@@ -1,0 +1,163 @@
+/* Classical English Translator App Styles */
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #2c1810 0%, #8b4513 50%, #daa520 100%);
+  background-size: 200% 200%;
+  animation: classicalGradient 8s ease infinite;
+  font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+@keyframes classicalGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Header */
+.app-header {
+  background: linear-gradient(135deg, rgba(218, 165, 32, 0.2) 0%, rgba(139, 69, 19, 0.1) 100%);
+  backdrop-filter: blur(10px);
+  padding: 4rem 2rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(218, 165, 32, 0.3);
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.2);
+}
+
+.header-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.app-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #daa520 0%, #ffd700 50%, #fff8dc 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+  letter-spacing: 0.02em;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  font-family: 'Georgia', serif;
+}
+
+.app-subtitle {
+  font-size: 1.25rem;
+  color: rgba(248, 248, 255, 0.9);
+  font-weight: 400;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+  font-style: italic;
+}
+
+/* Main Content */
+.app-main {
+  flex: 1;
+  padding: 3rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.result-container {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 1rem 0;
+  box-shadow: none;
+  margin-bottom: 2rem;
+  backdrop-filter: none;
+}
+
+/* Footer */
+.app-footer {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+  padding: 2rem 1rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: auto;
+  font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-title {
+    font-size: 2.5rem;
+  }
+  
+  .app-subtitle {
+    font-size: 1.125rem;
+  }
+  
+  .app-header {
+    padding: 3rem 1rem;
+  }
+  
+  .app-main {
+    padding: 2rem 1rem;
+  }
+  
+  .form-container {
+    padding: 2rem;
+    margin: 0 0.5rem 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-title {
+    font-size: 2rem;
+  }
+  
+  .form-container {
+    padding: 1.5rem;
+    border-radius: 16px;
+    margin: 0 0.25rem 1.5rem;
+  }
+
+  .app-main {
+    padding: 1.5rem 0.5rem;
+  }
+}
+
+/* Beautiful animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Gradient background animation */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animated-gradient {
+  background-size: 200% 200%;
+  animation: gradientShift 6s ease infinite;
+}

@@ -1,0 +1,20 @@
+{
+  "name": "meme-translator",
+  "version": "1.0.0",
+  "description": "A hilarious web app that transforms text through multiple languages to create meme-worthy results",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-deps": "npm install && cd server && npm install && cd ../client && npm install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["meme", "translator", "react", "node", "express", "api"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
