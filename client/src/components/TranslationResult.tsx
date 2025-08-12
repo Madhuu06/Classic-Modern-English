@@ -15,7 +15,7 @@ const TranslationResult: React.FC<TranslationResultProps> = ({
 }) => {
   const copyToClipboard = (text: string) => {
     navigator.clipboard.writeText(text);
-    toast.success('Copied to clipboard! 📋');
+    toast.success('Copied to clipboard!');
   };
 
   return (
@@ -26,7 +26,7 @@ const TranslationResult: React.FC<TranslationResultProps> = ({
       transition={{ duration: 0.5 }}
     >
       <div className="result-header">
-        <h2>✨ Classical Transformation Complete!</h2>
+        <h2>Classical Transformation Complete</h2>
       </div>
 
       {/* Original Input */}
@@ -36,7 +36,15 @@ const TranslationResult: React.FC<TranslationResultProps> = ({
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <h3>📝 Original Text: "{translation.original}"</h3>
+        <div className="box-icon">✨</div>
+        <h3>Original Text: "{translation.original}"</h3>
+        <button 
+          onClick={() => copyToClipboard(translation.original)}
+          className="copy-btn-box"
+          title="Copy original text"
+        >
+          📋 Copy
+        </button>
       </motion.div>
 
       {/* Translation Steps */}
@@ -95,7 +103,15 @@ const TranslationResult: React.FC<TranslationResultProps> = ({
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <h3>🎯 Final Result: "{translation.final}"</h3>
+        <div className="box-icon">🎯</div>
+        <h3>Final Result: "{translation.final}"</h3>
+        <button 
+          onClick={() => copyToClipboard(translation.final)}
+          className="copy-btn-box"
+          title="Copy final result"
+        >
+          📋 Copy
+        </button>
       </motion.div>
 
       {/* Action Buttons */}
@@ -106,7 +122,7 @@ const TranslationResult: React.FC<TranslationResultProps> = ({
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          🔄 New Classical Translation
+          New Classical Translation
         </motion.button>
       </div>
     </motion.div>

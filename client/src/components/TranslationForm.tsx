@@ -115,14 +115,16 @@ const TranslationForm: React.FC<TranslationFormProps> = ({
   };
 
   const exampleTexts = [
-    "I love this weather!",
+    "I love this weather today",
     "The meeting went very well",
     "I'm going to the market",
-    "Happy birthday my friend!",
+    "Happy birthday my friend",
     "I cannot locate my keys",
     "The cat is resting peacefully",
-    "Good morning to all",
-    "I feel wonderful today"
+    "Good morning everyone",
+    "I feel wonderful today",
+    "Please send me the report",
+    "Thank you for your help"
   ];
 
   const handleExampleClick = (example: string) => {
@@ -140,7 +142,7 @@ const TranslationForm: React.FC<TranslationFormProps> = ({
       <form onSubmit={handleSubmit} className="form">
         <div className="input-container">
           <label htmlFor="text" className="input-label">
-            What would you like to transform into classical English? 📜
+            What would you like to transform into classical English?
           </label>
           <textarea
             id="text"
@@ -169,7 +171,7 @@ const TranslationForm: React.FC<TranslationFormProps> = ({
               </>
             ) : (
               <>
-                📜 Begin Classical Transformation
+                Begin Classical Transformation
               </>
             )}
           </button>

@@ -1,6 +1,6 @@
-/* Translation Form Styles */
+/* Modern Translation Form Styles */
 .translation-form {
-  max-width: 700px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -16,34 +16,37 @@
 
 .input-label {
   display: block;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 600;
   color: #1e293b;
-  margin-bottom: 1rem;
-  text-align: center;
+  margin-bottom: 0.75rem;
   letter-spacing: -0.01em;
 }
 
 .text-input {
   width: 100%;
-  padding: 1.25rem;
-  border: 2px solid #e2e8f0;
+  padding: 1rem 1.25rem;
+  border: 2px solid rgba(139, 92, 246, 0.3);
   border-radius: 12px;
   font-size: 1rem;
   font-family: inherit;
   resize: vertical;
-  min-height: 140px;
-  transition: all 0.3s ease;
+  min-height: 120px;
+  transition: all 0.2s ease;
   background: #ffffff;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  line-height: 1.6;
+  color: #1e293b;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  line-height: 1.5;
 }
 
 .text-input:focus {
   outline: none;
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1), 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  transform: translateY(-1px);
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.2);
+}
+
+.text-input::placeholder {
+  color: #64748b;
 }
 
 .text-input:disabled {
@@ -56,7 +59,7 @@
   bottom: -30px;
   right: 0;
   font-size: 0.875rem;
-  color: #64748b;
+  color: #475569;
   font-weight: 500;
 }
 
@@ -68,28 +71,27 @@
 }
 
 .translate-btn {
-  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 50%, #6d28d9 100%);
   color: white;
   border: none;
-  padding: 1.25rem 3rem;
+  padding: 1rem 2.5rem;
   border-radius: 12px;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  transition: all 0.3s ease;
-  min-width: 280px;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+  min-width: 200px;
   justify-content: center;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  letter-spacing: 0.01em;
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4);
 }
 
 .translate-btn:hover:not(:disabled) {
-  background: linear-gradient(135deg, #1e40af 0%, #2563eb 100%);
-  transform: translateY(-2px);
-  box-shadow: 0 10px 15px -3px rgba(30, 58, 138, 0.4), 0 4px 6px -2px rgba(30, 58, 138, 0.05);
+  background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 50%, #5b21b6 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.5);
 }
 
 .translate-btn:disabled {

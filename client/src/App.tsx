@@ -40,10 +40,10 @@ function App() {
           className="header-content"
         >
           <h1 className="app-title">
-            📜 Classical English Translator ✨
+            Classical English Translator
           </h1>
           <p className="app-subtitle">
-            Transform your modern text into elegant, sophisticated classical English prose!
+            Transform your modern text into elegant, sophisticated classical English prose
           </p>
         </motion.div>
       </header>
